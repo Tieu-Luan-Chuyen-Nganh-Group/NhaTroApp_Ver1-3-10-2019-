@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/imgapp" />
 
     <EditText
-        android:id="@+id/editText_Register_TenDangNhap"
+        android:id="@+id/editText_AddUser_TenDangNhap"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editText_Register_Email"
+        android:id="@+id/editText_AddUser_Email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -53,10 +53,10 @@
         android:hint="nhập email..."
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_TenDangNhap" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddUser_TenDangNhap" />
 
     <EditText
-        android:id="@+id/editText_Register_MatKhau"
+        android:id="@+id/editText_AddUser_MatKhau"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -72,10 +72,10 @@
         android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_Email" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddUser_Email" />
 
     <EditText
-        android:id="@+id/editText_Register_NhapLaiMatKhau"
+        android:id="@+id/editText_AddUser_NhapSDT"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -83,8 +83,8 @@
         android:layout_marginEnd="8dp"
         android:background="@drawable/input"
         android:ems="10"
-        android:hint="nhập lại mật khẩu..."
-        android:drawableLeft="@drawable/login"
+        android:hint="nhập số điện thoại..."
+        android:drawableLeft="@drawable/call"
         android:drawablePadding="15dp"
         android:padding="15dp"
         android:inputType="textPassword"
@@ -92,10 +92,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_Email" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddUser_Email" />
 
     <Button
-        android:id="@+id/button_Register_DangKi"
+        android:id="@+id/button_AddUser_Add"
         android:layout_width="147dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
@@ -103,7 +103,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="12dp"
         android:background="@drawable/button"
-        android:text="Đăng ký"
+        android:text="Thêm"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="25dp"
@@ -111,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_NhapLaiMatKhau"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddUser_NhapSDT"
         app:layout_constraintVertical_bias="0.08" />
 
     <TextView
@@ -130,7 +130,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_NhapLaiMatKhau"
+        app:layout_constraintTop_toBottomOf="@+id/editText_AddUser_NhapSDT"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -149,20 +149,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView_Register_FaceBook"
+        android:id="@+id/imageView_AddUser_FaceBook"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView_Register_Google"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_AddUser_Google"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:srcCompat="@drawable/facebook" />
 
     <ImageView
-        android:id="@+id/imageView_Register_Google"
+        android:id="@+id/imageView_AddUser_Google"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="8dp"

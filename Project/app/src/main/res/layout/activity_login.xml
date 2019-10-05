@@ -9,7 +9,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="350dp"
-        android:layout_height="167dp"
+        android:layout_height="218dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="56dp"
         android:layout_marginEnd="8dp"
@@ -19,11 +19,11 @@
         app:srcCompat="@drawable/imgapp" />
 
     <EditText
-        android:id="@+id/editText_Register_TenDangNhap"
+        android:id="@+id/editText_Login_TenDangNhap"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/input"
         android:drawableLeft="@drawable/employee"
@@ -38,70 +38,33 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/editText_Register_Email"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/input"
-        android:drawableLeft="@drawable/envelope"
-        android:drawablePadding="15dp"
-        android:padding="15dp"
-        android:ems="10"
-        android:inputType="textEmailAddress"
-        android:hint="nhập email..."
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_TenDangNhap" />
-
-    <EditText
         android:id="@+id/editText_Register_MatKhau"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="49dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="8dp"
         android:background="@drawable/input"
-        android:ems="10"
-        android:hint="nhập mật khẩu..."
         android:drawableLeft="@drawable/lock"
         android:drawablePadding="15dp"
-        android:padding="15dp"
-        android:inputType="textPassword"
-        android:textColor="@android:color/background_dark"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_Email" />
-
-    <EditText
-        android:id="@+id/editText_Register_NhapLaiMatKhau"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="68dp"
-        android:layout_marginEnd="8dp"
-        android:background="@drawable/input"
         android:ems="10"
-        android:hint="nhập lại mật khẩu..."
-        android:drawableLeft="@drawable/login"
-        android:drawablePadding="15dp"
-        android:padding="15dp"
+        android:hint="nhập mật khẩu..."
         android:inputType="textPassword"
+        android:padding="15dp"
         android:textColor="@android:color/background_dark"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_Email" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_Login_TenDangNhap" />
 
     <Button
-        android:id="@+id/button_Register_DangKi"
+        android:id="@+id/button_Login_DangKi"
         android:layout_width="147dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/button"
         android:text="Đăng ký"
         android:textAllCaps="false"
@@ -109,16 +72,34 @@
         android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_NhapLaiMatKhau"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintTop_toBottomOf="@+id/editText_Register_MatKhau" />
+
+    <Button
+        android:id="@+id/button_Login_DangNhap"
+        android:layout_width="147dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="84dp"
+        android:background="@drawable/button"
+        android:text="Đăng nhập"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Register_MatKhau" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="236dp"
         android:layout_height="30dp"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
@@ -130,7 +111,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Register_NhapLaiMatKhau"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Register_MatKhau"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -149,20 +130,20 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView_Register_FaceBook"
+        android:id="@+id/imageViewFaceBook"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/imageView_Register_Google"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewGoogle"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:srcCompat="@drawable/facebook" />
 
     <ImageView
-        android:id="@+id/imageView_Register_Google"
+        android:id="@+id/imageViewGoogle"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="8dp"
